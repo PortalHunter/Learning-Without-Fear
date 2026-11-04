@@ -17,6 +17,15 @@ The recommended path is **Settings → Pages → Build and deployment → Source
 
 Making the repository public does not itself enable GitHub Pages. Configure **GitHub Actions** under Settings → Pages → Source, then verify that the Pages deployment workflow succeeds and that the published website is reachable. Repository publication and licensing are separate decisions.
 
+## Licensing
+
+The website's original implementation code (HTML markup, JavaScript, and CSS)
+is covered by the repository's [MIT License](../LICENSE).
+Original editorial and educational text, explanations, and original visual
+content are covered by [CC BY 4.0](../LICENSE-CONTENT.md), unless otherwise
+marked. This does not license embedded YouTube videos, thumbnails, third-party
+research, quotations, or other material belonging to external rights holders.
+
 ## Integrity and accessibility
 - This site makes no claim of a tested intervention or completed project experiments.
 - Research-track summaries were reconstructed from project conversation context; the full seven finished reports and the three completed integration deliverables from prompt 08 still require import and source-by-source verification.
