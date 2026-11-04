@@ -30,7 +30,16 @@ This project investigates whether constructive, formative feedback can improve A
 - Specify hypotheses, failure modes, confounders, and falsification criteria.
 - Invite independent review before asserting effectiveness.
 
-This is a research proposal, not an established alignment method. Human educational analogies can motivate hypotheses but do not prove AI models experience fear or punishment. Repository visibility and website publication are managed separately. No open-source license is asserted here; adding a license requires an explicit owner decision.
+This is a research proposal, not an established alignment method. Human educational analogies can motivate hypotheses but do not prove AI models experience fear or punishment. Repository visibility and website publication are managed separately. The project uses separate software and content licenses, described below.
+
+## Licensing
+
+Learning Without Fear uses two complementary licenses for materials that the project is authorized to license:
+
+- **Software and implementation code:** [MIT License](LICENSE) — applies to original Python and JavaScript code, CSS, tests, automation workflows, and HTML implementation markup.
+- **Original research, educational and editorial content:** [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE-CONTENT.md) — applies to original project-authored research prose, learning materials, website copy, and original visual content unless otherwise marked.
+
+Third-party publications, quotations, videos, thumbnails, trademarks, and other externally owned works are **not** relicensed by this repository. Original software embedded in a mixed HTML page uses MIT, while original prose in that page uses CC BY 4.0. The two licenses do not imply endorsement or collaboration by any cited researcher.
 
 ## Public research website
 
