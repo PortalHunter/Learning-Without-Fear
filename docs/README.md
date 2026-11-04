@@ -15,7 +15,7 @@ All resources are relative to this directory for compatibility with project site
 A publishing workflow is provided at `.github/workflows/pages.yml`. In GitHub Settings → Pages, select **GitHub Actions** as the source. The workflow serves this `docs/` folder without a framework build. If Pages is already configured for branch deployment, that alternative remains possible, but the automated workflow uses GitHub Actions.
 The recommended path is **Settings → Pages → Build and deployment → Source → GitHub Actions**. The workflow `.github/workflows/pages.yml` automatically packages `/docs` and deploys on updates to `main`. Source `main` / `/docs` remains an alternative if you prefer branch-based publishing. A public Pages site does not imply that its source repository must be public on plans that support private-repository Pages.
 
-The repository is publicly readable as of November 3, 2026. Public repository visibility does not itself enable GitHub Pages; the owner must select **GitHub Actions** under Settings → Pages → Source. The site is not confirmed deployed until the Pages workflow succeeds. Publication and licensing are separate decisions.
+Making the repository public does not itself enable GitHub Pages. Configure **GitHub Actions** under Settings → Pages → Source, then verify that the Pages deployment workflow succeeds and that the published website is reachable. Repository publication and licensing are separate decisions.
 
 ## Integrity and accessibility
 - This site makes no claim of a tested intervention or completed project experiments.
