@@ -30,7 +30,7 @@ This project investigates whether constructive, formative feedback can improve A
 - Specify hypotheses, failure modes, confounders, and falsification criteria.
 - Invite independent review before asserting effectiveness.
 
-This is a research proposal, not an established alignment method. Human educational analogies can motivate hypotheses but do not prove AI models experience fear or punishment. The GitHub repository is public as of November 3, 2026. No open-source license is asserted here; adding a license requires an explicit owner decision.
+This is a research proposal, not an established alignment method. Human educational analogies can motivate hypotheses but do not prove AI models experience fear or punishment. Repository visibility and website publication are managed separately. No open-source license is asserted here; adding a license requires an explicit owner decision.
 
 ## Public research website
 
