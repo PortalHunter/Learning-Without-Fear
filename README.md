@@ -16,6 +16,7 @@ This project investigates whether constructive, formative feedback can improve A
 - [Curated evidence library](docs/library.html) — 30 annotated publications, including sources challenging the theory
 - [Curated bibliography (Markdown)](research/curated-adjacent-research-2026.md)
 - [2024–2026 cross-disciplinary evidence supplement](research/cross-disciplinary-evidence-2024-2026.md) — nine source-checked additions with designs, findings, limits and AI-versus-human labels
+- [Candidate source audit (23 topics, November 2026)](research/claude-candidate-evidence-audit-2026.md) — original-source links and measured-AI versus human/animal analogy boundaries; **not yet part of the 30-study library count or an LWF validation**
 - [Research framework](research/framework.md)
 - [Initial bibliography](research/reading-list.md)
 - [Course outline](course/outline.md)
