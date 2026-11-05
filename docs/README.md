@@ -12,10 +12,7 @@ All resources are relative to this directory for compatibility with project site
 
 ## Publishing
 
-A publishing workflow is provided at `.github/workflows/pages.yml`. In GitHub Settings → Pages, select **GitHub Actions** as the source. The workflow serves this `docs/` folder without a framework build. If Pages is already configured for branch deployment, that alternative remains possible, but the automated workflow uses GitHub Actions.
-The recommended path is **Settings → Pages → Build and deployment → Source → GitHub Actions**. The workflow `.github/workflows/pages.yml` automatically packages `/docs` and deploys on updates to `main`. Source `main` / `/docs` remains an alternative if you prefer branch-based publishing. A public Pages site does not imply that its source repository must be public on plans that support private-repository Pages.
-
-Making the repository public does not itself enable GitHub Pages. Configure **GitHub Actions** under Settings → Pages → Source, then verify that the Pages deployment workflow succeeds and that the published website is reachable. Repository publication and licensing are separate decisions.
+GitHub Pages publishes this `docs/` directory via `.github/workflows/pages.yml` on updates to protected `main`, with **GitHub Actions** as the publishing source. The latest public proposal and Perspectives updates passed validation and publishing on November 5, 2026. For future edits, verify both [site validation](https://github.com/PortalHunter/Learning-Without-Fear/actions/workflows/quality.yml) and [Pages publishing](https://github.com/PortalHunter/Learning-Without-Fear/actions/workflows/pages.yml) against the current `main` commit. Automated checks do not replace live-browser, scientific, accessibility, or rights reviews.
 
 ## Licensing
 
@@ -28,18 +25,17 @@ research, quotations, or other material belonging to external rights holders.
 
 ## Integrity and accessibility
 - This site makes no claim of a tested intervention or completed project experiments.
-- Research-track summaries were reconstructed from project conversation context; the full seven finished reports and the three completed integration deliverables from prompt 08 still require import and source-by-source verification.
+- Historical seven-track synopses were reconstructed from project conversation context; the original seven reports and eighth synthesis have not been recovered as independently verifiable files. Separately, 13 publication reviews passed AI-assisted, risk-based evidence QA and were integrated into the public proposal. Neither body of work validates a Learning Without Fear intervention.
 - Media points to original publishers. No auto-play, tracking scripts, ads, or re-hosted footage.
 - The demonstration is a deterministic local script, not a live AI evaluation.
 - Uses semantic HTML, visible focus states, reduced-motion support and responsive layout.
 - No build step, install, dependency or secret is required.
 
 ## Editorial follow-up
-1. Import reports 01–07 under research/ with canonical names, plus the confirmed Prompt 08 synthesis when available.
-2. Review each claim against its actual report and primary sources; add an evidence ledger that records disagreements and uncertainty.
-3. Replace provisional report synopsis with claim-level linked evidence without silently increasing certainty.
-4. Run independent accessibility and cross-browser tests; check live publication URL and links.
-5. Add further verified video clips and captions without copying third-party footage.
+1. If the original seven specialist reports and eighth synthesis become available, import and source-check them **separately** from the completed 13-publication review; do not silently treat missing historical artifacts as recovered.
+2. Maintain publication traceability and quarantine unresolved quantitative discrepancies rather than increasing the certainty of provisional conclusions.
+3. Obtain independent human scientific, attribution, and rights review before treating the proposal as validated or beginning any model or participant experiments. **Experiments remain NO_GO without separate authorization.**
+4. Periodically review keyboard and screen-reader accessibility, cross-browser rendering, public citation links, captions, and direct YouTube fallbacks; retain click-to-load behavior.
 
 ## Featured Musk interview excerpt
 
