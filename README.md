@@ -5,7 +5,7 @@
 
 **Direct link:** https://portalhunter.github.io/Learning-Without-Fear/
 
-**Status (November 5, 2026):** Bounded evidence consolidation and a candidate research-question/methodology packet are complete **as author-prepared work**. No real model experiments have been conducted, and no intervention is independently validated. The proposal awaits human scientific review.
+**Status (November 5, 2026):** The public research proposal is published, with a 30-publication Evidence Library and 13 publication-specific reviews integrated into the proposal. The reviews received AI-assisted, risk-based checks against original publications—not independent human scientific endorsement, a systematic review, or replication. The H1–H5 hypotheses and conditional Stage 0 design remain proposals. **No real Learning Without Fear experiments have been conducted, and effectiveness is unvalidated.** Independent scientific review is still needed.
 
 This project investigates whether constructive, formative feedback can improve AI systems' calibrated honesty, error recovery, and resistance to reward exploitation without sacrificing task performance.
 
@@ -45,9 +45,9 @@ Third-party publications, quotations, videos, thumbnails, trademarks, and other 
 
 ## Public research website
 
-The interactive, responsive site lives in [docs/](docs/) and includes two click-to-load embedded videos, an expanded 30-source evidence library, a cross-disciplinary science showcase, the proposed experiments, and an educational error-correction demonstration. The public repository is not itself proof that the GitHub Pages website has deployed; see [GitHub Pages settings](https://github.com/PortalHunter/Learning-Without-Fear/settings/pages) and [Actions](https://github.com/PortalHunter/Learning-Without-Fear/actions) for deployment status.
+The interactive, responsive site lives in [docs/](docs/) and includes **three distinct click-to-load YouTube videos** across its pages, an expanded 30-source Evidence Library, a cross-disciplinary science showcase, proposed experiments, and a scripted educational error-correction demonstration. The mathematical process-supervision entry links to OpenAI's original research article because its Forum recording may require sign-in. The site is published via GitHub Pages; see the [deployment workflow](https://github.com/PortalHunter/Learning-Without-Fear/actions/workflows/pages.yml) for its latest deployment status. A successful software check does not validate scientific claims.
 
-The original seven specialist reports and original eighth synthesis from earlier conversations remain unavailable as independently checked source files. A later, separate November 5 evidence consolidation and conditional methodology proposal were prepared; they **do not recover or verify the missing originals**. The public proposal summarizes the newer work without transferring private experimental code, internal review records or datasets.
+The original seven specialist reports and eighth synthesis from earlier conversations remain unavailable as independently checked source files. **Separately, 13 publication-specific evidence reviews and an AI-assisted integration audit were completed on November 5, 2026, and their bounded, source-linked synthesis was integrated into the public proposal.** This does **not** recover or verify the missing historical reports, constitute independent human scientific approval, or validate an intervention. Private experimental code, review records, and datasets remain unpublished.
 
 ## Contributing and release safeguards
 
