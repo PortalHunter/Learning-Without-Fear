@@ -27,6 +27,7 @@ class Page(HTMLParser):
         self.in_title = False
         self.studies: list[dict[str, object]] = []
         self.current_study: dict[str, object] | None = None
+        self.active_study_field: str | None = None
         self.images_without_alt = 0
         self.unsafe_blank_links = 0
 
@@ -49,27 +50,39 @@ class Page(HTMLParser):
                     self.links.append((key, props[key], props))
         if tag == "article" and "study" in props.get("class", "").split():
             self.current_study = {"metadata": props, "source_links": 0,
-                                  "citation": False, "summary": False, "boundary": False}
+                                  "citation": False, "summary": False, "design": False,
+                                  "connection": False, "boundary": False,
+                                  "design_text": "", "connection_text": ""}
             self.studies.append(self.current_study)
         if self.current_study is not None:
             classes = props.get("class", "").split()
             for name, field in (("study-citation", "citation"),
                                 ("study-summary", "summary"),
+                                ("study-design", "design"),
+                                ("study-connection", "connection"),
                                 ("study-limit", "boundary")):
                 if name in classes:
                     self.current_study[field] = True
+                    if tag == "p" and field in {"design", "connection"}:
+                        self.active_study_field = field + "_text"
             if tag == "a" and props.get("href", "").startswith("https://"):
                 self.current_study["source_links"] = int(self.current_study["source_links"]) + 1
 
     def handle_endtag(self, tag: str) -> None:
         if tag == "title":
             self.in_title = False
+        if tag == "p":
+            self.active_study_field = None
         if tag == "article":
             self.current_study = None
+            self.active_study_field = None
 
     def handle_data(self, data: str) -> None:
         if self.in_title:
             self.title_parts.append(data)
+        if self.current_study is not None and self.active_study_field:
+            field = self.active_study_field
+            self.current_study[field] = str(self.current_study[field]) + data
 
 
 def validate() -> list[str]:
@@ -136,8 +149,13 @@ def validate() -> list[str]:
         metadata = study["metadata"]
         if not all(metadata.get(x) for x in ("data-year", "data-topic", "data-discipline", "data-role")):
             errors.append(f"Library entry {idx}: missing topic, discipline, year or evidence role")
-        if not all(study[x] for x in ("citation", "summary", "boundary")):
-            errors.append(f"Library entry {idx}: missing citation, summary or limitations")
+        if not all(study[x] for x in ("citation", "summary", "design", "connection", "boundary")):
+            errors.append(f"Library entry {idx}: missing citation, summary, study design, connection or boundary")
+        for field in ("design_text", "connection_text"):
+            if len(str(study[field]).strip()) < 70:
+                errors.append(f"Library entry {idx}: {field} is empty or too generic")
+        if not re.search(r"\\bH[1-5]\\b", str(study["connection_text"])):
+            errors.append(f"Library entry {idx}: connection does not identify an LWF hypothesis")
         if not study["source_links"]:
             errors.append(f"Library entry {idx}: no HTTPS source link")
 
