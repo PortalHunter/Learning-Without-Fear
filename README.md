@@ -1,5 +1,5 @@
 # Learning Without Fear
-## A Proposed AI Training Framework
+## An Evidence-Informed AI Reliability Research Proposal
 
 ### [Visit the Learning Without Fear website](https://portalhunter.github.io/Learning-Without-Fear/)
 
