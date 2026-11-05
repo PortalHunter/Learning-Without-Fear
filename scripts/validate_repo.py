@@ -154,7 +154,7 @@ def validate() -> list[str]:
         for field in ("design_text", "connection_text"):
             if len(str(study[field]).strip()) < 70:
                 errors.append(f"Library entry {idx}: {field} is empty or too generic")
-        if not re.search(r"\\bH[1-5]\\b", str(study["connection_text"])):
+        if not re.search(r"\bH[1-5]\b", str(study["connection_text"])):
             errors.append(f"Library entry {idx}: connection does not identify an LWF hypothesis")
         if not study["source_links"]:
             errors.append(f"Library entry {idx}: no HTTPS source link")
