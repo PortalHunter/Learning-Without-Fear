@@ -5,13 +5,14 @@
 
 **Direct link:** https://portalhunter.github.io/Learning-Without-Fear/
 
-**Status:** Early-stage research and educational proposal; no interventions have yet been validated by this project.
+**Status (November 5, 2026):** Bounded evidence consolidation and a candidate research-question/methodology packet are complete **as author-prepared work**. No real model experiments have been conducted, and no intervention is independently validated. The proposal awaits human scientific review.
 
 This project investigates whether constructive, formative feedback can improve AI systems' calibrated honesty, error recovery, and resistance to reward exploitation without sacrificing task performance.
 
 **Central question:** Under what conditions does process-oriented, evidence-grounded feedback improve these behaviors beyond outcome-only feedback?
 
 ## Project documents
+- **[Current research proposal and evidence map (November 2026)](research/learning-without-fear-proposal-2026-11.md)** — the main public handoff: H1–H5, conditional Stage 0 H3 design, counterevidence, failure checks and review gates.
 - [Website source](docs/index.html) — public-facing pages hosted through GitHub Pages
 - [Curated evidence library](docs/library.html) — 30 annotated publications, including sources challenging the theory
 - [Curated bibliography (Markdown)](research/curated-adjacent-research-2026.md)
@@ -46,7 +47,7 @@ Third-party publications, quotations, videos, thumbnails, trademarks, and other 
 
 The interactive, responsive site lives in [docs/](docs/) and includes two click-to-load embedded videos, an expanded 30-source evidence library, a cross-disciplinary science showcase, the proposed experiments, and an educational error-correction demonstration. The public repository is not itself proof that the GitHub Pages website has deployed; see [GitHub Pages settings](https://github.com/PortalHunter/Learning-Without-Fear/settings/pages) and [Actions](https://github.com/PortalHunter/Learning-Without-Fear/actions) for deployment status.
 
-The seven specialist reports and the eighth full synthesis still need to be imported from their source conversations. The website reports that gap transparently and does not claim a complete integration or any executed LWF experiment.
+The original seven specialist reports and original eighth synthesis from earlier conversations remain unavailable as independently checked source files. A later, separate November 5 evidence consolidation and conditional methodology proposal were prepared; they **do not recover or verify the missing originals**. The public proposal summarizes the newer work without transferring private experimental code, internal review records or datasets.
 
 ## Contributing and release safeguards
 
