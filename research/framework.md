@@ -1,4 +1,4 @@
-# Research Framework — Draft 0.2 (2026-11-03)
+# Research Framework — Draft 0.2 (2026-11-03; proposal status clarified 2026-11-05)
 
 **Status:** Hypothesis-generating research proposal, not a validated training method.
 
@@ -16,6 +16,17 @@ A responsible AI training and evaluation system should distinguish successful ou
 - **H3 — Error recovery:** When shown valid contradictory evidence, models correct errors more reliably; when shown incorrect feedback, they resist false concessions and verify independently.
 - **H4 — Information seeking:** In environments with authorized tools and an information budget, models choose appropriate retrieval or verification actions more often and solve more initially unknown tasks.
 - **H5 — Generalization:** Improvements survive new task families, different graders, distribution shifts, and multi-step settings without increased reward gaming.
+
+## Current candidate Stage 0 — distinct from the broader five-hypothesis program
+
+The [November 2026 research proposal](learning-without-fear-proposal-2026-11.md) provides the current **conditional, author-prepared inference-time H3 design**. In a fixed model/checkpoint and independently verified set of unique initially incorrect but recoverable responses, a proposed four-arm within-source-family comparison would cross:
+
+- A binary truthful error verdict versus the same verdict plus verified non-solution-revealing error localization; and
+- Neutral wording versus non-degrading wording emphasizing accountability for accuracy.
+
+All conditions would share reporting obligations and a declared revision budget. The currently preferred Option A is **not independently approved**; differences in information, length, instructions and compute, source-family independence, oracle validity, causal inference and safety margins remain unresolved. Initially correct answers challenged by invalid feedback, impossible and underspecified tasks, refusal, cost and unauthorized changes are **separate guardrails**, not pooled into the primary recovery denominator. Zero real model trials were conducted by this project. This finite Stage 0 proposal cannot answer H1, H2, H4 or H5, prove lasting weight learning, or support claims about subjective experience.
+
+The earlier comparison conditions below remain broader *conceptual research directions*, not an approved design or an instruction to run experiments.
 
 ## What 'curiosity' means operationally
 Do not infer subjective curiosity or intrinsic desire. Measure *epistemic initiative*: useful clarification requests, information-gathering actions, hypothesis testing, and efficient uncertainty reduction.
